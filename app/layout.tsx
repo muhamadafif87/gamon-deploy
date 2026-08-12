@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Makaroni Gamon | Bikin Meweq, Antri Redfleq",
   description: "Makaroni Gamon - Bikin Nangis, Anti Redflag. Nikmati cemilan makaroni pedas dengan berbagai varian rasa yang nagih dan renyah.",
+  icons: {
+    icon: '/gamon_logo.png',
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
